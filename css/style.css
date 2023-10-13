@@ -2,6 +2,8 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);
+  --gradient-background:linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
 body {
@@ -15,7 +17,7 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 66px;
 }
 
 h2 {
@@ -57,8 +59,9 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  color: var(--primary-color);
+  color: #322f65;
   border: 1px solid var(--primary-color);
+  background:white
 }
 
 .homepage-link {
@@ -85,4 +88,61 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 412px){
+h1{
+  font-size: 47px;
+  margin: 10px;
+}
+h2{
+  font-size: 38px;
+margin-bottom: 10px;
+}
+.primary-link{
+  border-radius: 4px;
+  padding: 3px 5px;
+  box-shadow: 2px 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+}
+
+@media(min-width: 756px) {
+.email-link{
+  color: rgb(13, 7, 129);
+  margin: 20px;
+}
+body{
+  background: var(--gradient-background);
+}
+}
+
+@media (max-width: 576px){
+ body {
+ background: var(--background);
+ }
+ h1{
+  color: rgb(34, 4, 4);
+  margin-bottom: 10px;
+  font-size: 40px;
+ }
+ h3{
+  color: #04021e;
+ }
+img{
+  margin-bottom: 15px;
+}
+p, .about-paragraphs{
+  border: 2px solid rgb(253, 251, 251);
+  font-weight: 100px;
+  color: rgb(10, 1, 1);
+  box-shadow: var(--box-shadow);
+}
+.email-link{
+  color:rgb(36, 7, 63);
+  font-size: 28px;
+}
+h2,.call{
+  font-size: 28px;
+  color: rgb(249, 226, 191);
+}
 }
